@@ -60,6 +60,40 @@ export default async function Start() {
         </div>
       </section>
 
+      <section id="anfangen" className="narrow anfangen">
+        <span className="eyebrow">So fängst du an</span>
+        <h2 className="h2">Wie fängt man eigentlich an zu töpfern?</h2>
+        <p className="gross">Ganz ehrlich: mit schmutzigen Händen und einem Lachen.</p>
+        <p>
+          Am Anfang steht ein Klumpen Ton, kühl, weich und ein bisschen eigenwillig. Bevor er etwas werden darf, wird er
+          geknetet. Das macht die Luftbläschen raus und bringt dich langsam an, im Keller, weg vom Handy, hin zu deinen Händen.
+        </p>
+        <p>
+          Dann kommt der Moment, vor dem alle ein wenig Respekt haben: der Ton auf der Drehscheibe. Er dreht sich, er
+          wackelt, er macht, was er will. Mit nassen Händen und ein bisschen Geduld bringst du ihn in die Mitte. Das nennt
+          man zentrieren, und es ist das Wichtigste und das Schwierigste zugleich. Wenn es zum ersten Mal klappt und der Ton
+          plötzlich ruhig unter deinen Händen läuft, ist das ein kleines Wunder. Versprochen.
+        </p>
+        <p>
+          Danach öffnest du ihn mit dem Daumen, ziehst die Wand behutsam nach oben, und auf einmal steht da etwas, das
+          aussieht wie ein Becher. Vielleicht ein bisschen schief. Vielleicht ein bisschen dick. Aber deiner.
+        </p>
+        <p>
+          Und wenn etwas zusammenfällt? Dann knetest du es wieder zusammen und fängst neu an. Das gehört dazu, und ehrlich
+          gesagt ist das der halbe Spass.
+        </p>
+        <p>
+          Dein Stück darf danach in Ruhe trocknen. Ich brenne und glasiere es für dich, und ein paar Wochen später hältst du
+          es in den Händen. Am schönsten ist es, wenn du zum ersten Mal deinen Kaffee daraus trinkst.
+        </p>
+        <p>
+          Vorwissen brauchst du keines. Nur Kleider, die schmutzig werden dürfen, kurze Fingernägel und Lust, etwas
+          auszuprobieren.
+        </p>
+        <p className="gruss">Ich freu mich auf dich!<br />Alessia</p>
+        <Link href="#kurse" className="btn btn-accent" style={{ alignSelf: "flex-start" }}>Zu den Terminen</Link>
+      </section>
+
       <section id="ueber" className="wrap" style={{ padding: "96px 24px" }}>
         <div className="split">
           <div className="bild-rund">

@@ -144,3 +144,9 @@ footer.fuss nav { display: flex; flex-wrap: wrap; gap: 20px; }
   .fakten { grid-template-columns: 1fr; }
   .karte { padding: 22px; }
 }
+
+/* So fängst du an */
+.anfangen { padding-top: 96px; padding-bottom: 32px; display: flex; flex-direction: column; gap: 18px; max-width: 760px; }
+.anfangen p { margin: 0; color: var(--ink-2); font-size: 18px; line-height: 1.7; }
+.anfangen p.gross { font-family: var(--serif); font-size: clamp(26px, 3.4vw, 32px); line-height: 1.25; color: var(--accent); font-style: italic; }
+.anfangen p.gruss { font-family: var(--serif); font-size: 28px; line-height: 1.25; color: var(--ink); }
