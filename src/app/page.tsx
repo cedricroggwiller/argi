@@ -94,31 +94,18 @@ export default async function Start() {
         <Link href="#kurse" className="btn btn-accent" style={{ alignSelf: "flex-start" }}>Zu den Terminen</Link>
       </section>
 
-      <section id="ueber" className="wrap" style={{ padding: "96px 24px" }}>
-        <div className="split">
-          <div className="bild-rund">
-            <Image src="/bilder/tasse-lavendel.jpg" alt="Gesprenkelte Tasse vor Lavendel in der Morgensonne" fill sizes="(max-width: 900px) 100vw, 560px" className="cover" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-            <h2 className="h2">Hallo, ich bin Argi.</h2>
-            <p className="lead" style={{ maxWidth: 560 }}>
-              [Kurzer Text von Argi: wie sie zum Ton gekommen ist, was ihr an den Kursen wichtig ist, was man am Ende
-              mit nach Hause nimmt.]
-            </p>
-            <div className="fakten">
-              <div><span className="zahl">klein</span><span className="small muted">Gruppen, damit Zeit für alle bleibt</span></div>
-              <div><span className="zahl">gebrannt</span><span className="small muted">und glasiert holst du dein Stück später ab</span></div>
-              <div><span className="zahl">Kafi</span><span className="small muted">oben gibt’s Kaffee und glutenfreies Gebäck</span></div>
-            </div>
-          </div>
+      <section id="werkstatt" className="wrap" style={{ padding: "96px 24px" }}>
+        <div className="section-head">
+          <h2>Aus der Werkstatt</h2>
+          <a href={SITE.instagram} rel="noopener" className="small">Mehr auf Instagram</a>
         </div>
-        <div className="galerie" style={{ marginTop: 56 }}>
+        <div className="galerie galerie-5">
+          <div className="hoch"><Image src="/bilder/tasse-lavendel.jpg" alt="Gesprenkelte Tasse vor Lavendel in der Morgensonne" fill sizes="(max-width: 600px) 100vw, 480px" className="cover" /></div>
           <div><Image src="/bilder/becher-hand.jpg" alt="Weisser Becher in der Hand vor roter Holzwand" fill sizes="(max-width: 600px) 50vw, 300px" className="cover" /></div>
           <div><Image src="/bilder/vase-kobalt.jpg" alt="Kobaltblaue Vase" fill sizes="(max-width: 600px) 50vw, 300px" className="cover" /></div>
           <div><Image src="/bilder/becher-gestapelt.jpg" alt="Gestapelte gesprenkelte Becher" fill sizes="(max-width: 600px) 50vw, 300px" className="cover" /></div>
           <div><Image src="/bilder/drehscheibe.jpg" alt="Arbeitsplatz an der Drehscheibe" fill sizes="(max-width: 600px) 50vw, 300px" className="cover" /></div>
         </div>
-        <p style={{ marginTop: 20 }}><a href={SITE.instagram} rel="noopener">Mehr auf Instagram</a></p>
       </section>
 
       <section id="ort" className="dark">

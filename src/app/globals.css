@@ -150,3 +150,11 @@ footer.fuss nav { display: flex; flex-wrap: wrap; gap: 20px; }
 .anfangen p { margin: 0; color: var(--ink-2); font-size: 18px; line-height: 1.7; }
 .anfangen p.gross { font-family: var(--serif); font-size: clamp(26px, 3.4vw, 32px); line-height: 1.25; color: var(--accent); font-style: italic; }
 .anfangen p.gruss { font-family: var(--serif); font-size: 28px; line-height: 1.25; color: var(--ink); }
+
+/* Galerie mit grossem Bild links */
+.galerie-5 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.galerie-5 .hoch { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; }
+@media (max-width: 640px) {
+  .galerie-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .galerie-5 .hoch { grid-row: span 1; aspect-ratio: 1 / 1; }
+}

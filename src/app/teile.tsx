@@ -10,7 +10,8 @@ export function Kopf() {
       <Link href="/" className="brand">argi</Link>
       <nav className="nav-links" aria-label="Hauptnavigation">
         <Link href="/#kurse">Kurse</Link>
-        <Link href="/#ueber">Über mich</Link>
+        <Link href="/#anfangen">So geht’s</Link>
+        <Link href="/#werkstatt">Werkstatt</Link>
         <Link href="/#ort">Ort</Link>
         <Link href="/gutscheine">Gutscheine</Link>
         <Link href="/#kurse" className="btn btn-dark btn-small">Kurs buchen</Link>
