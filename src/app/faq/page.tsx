@@ -12,7 +12,7 @@ const FRAGEN: [string, string][] = [
   ["Was soll ich anziehen?", "Etwas, das schmutzig werden darf. Ton wäscht sich gut aus, Glasur nicht immer. Kurze Fingernägel helfen an der Drehscheibe."],
   ["Wann bekomme ich meine Stücke?", "Nach dem Kurs werden sie getrocknet, gebrannt und glasiert. Das dauert einige Wochen; ich melde mich, sobald du sie im Kafi abholen kannst. [Dauer von Argi bestätigen]"],
   ["Kann ich absagen oder umbuchen?", `Bis ${SITE.stornoTage} Tage vor dem Kurs kostenlos. Danach kannst du deinen Platz an jemand anderen weitergeben. [Regel von Argi bestätigen]`],
-  ["Wie bezahle ich?", "Online beim Buchen mit TWINT oder Karte."],
+  ["Wie bezahle ich?", "Vor Ort am Kurstag, mit TWINT oder bar."],
   ["Wo genau findet der Kurs statt?", `In der Werkstatt im Keller des ${SITE.ort.name}, ${SITE.ort.strasse}, ${SITE.ort.plzOrt}.`],
   ["Ab welchem Alter?", "[Angabe von Argi]"],
 ];

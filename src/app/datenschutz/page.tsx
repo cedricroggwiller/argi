@@ -19,11 +19,8 @@ export default function Datenschutz() {
         die gebuchten Plätze. Wir brauchen sie, um den Kurs durchzuführen, dir Bestätigung und Erinnerung zu schicken
         und dich bei Änderungen zu erreichen.
       </p>
-      <h2 style={{ fontSize: 28 }}>Zahlung</h2>
-      <p>
-        Online-Zahlungen laufen über Stripe Payments Europe Ltd. Karten- und TWINT-Daten gibst du direkt bei Stripe ein;
-        wir sehen sie nicht. Es gilt zusätzlich die Datenschutzerklärung von Stripe.
-      </p>
+      <h2 style={{ fontSize: 28 }}>E-Mails</h2>
+      <p>Bestätigungen und Erinnerungen verschicken wir über den Dienst Resend (Resend, Inc., USA).</p>
       <h2 style={{ fontSize: 28 }}>Cookies und Statistik</h2>
       <p>Diese Website setzt keine Tracking- oder Werbe-Cookies und nutzt keine Besucherstatistik.</p>
       <h2 style={{ fontSize: 28 }}>Wie lange?</h2>
