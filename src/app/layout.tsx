@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Karla } from "next/font/google";
+// Schriften liegen im Projekt (fontsource): der Bau braucht keinen Zugriff auf Google Fonts.
+import "@fontsource/cormorant-garamond/latin-500.css";
+import "@fontsource/cormorant-garamond/latin-500-italic.css";
+import "@fontsource/cormorant-garamond/latin-600.css";
+import "@fontsource-variable/karla/wght.css";
 import "./globals.css";
 import { appUrl } from "@/lib/site";
-
-const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["500", "600"], style: ["normal", "italic"], variable: "--font-serif" });
-const sans = Karla({ subsets: ["latin"], weight: ["400", "500", "700"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(appUrl()),
@@ -17,7 +18,7 @@ export const viewport: Viewport = { themeColor: "#f4eee6" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de-CH" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="de-CH">
       <body>{children}</body>
     </html>
   );

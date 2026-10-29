@@ -10,8 +10,8 @@
   --accent-dark: #7f3820;
   --sand: #cdb49e;
   --ok: #3d6b3a;
-  --serif: var(--font-serif), Georgia, "Times New Roman", serif;
-  --sans: var(--font-sans), system-ui, -apple-system, sans-serif;
+  --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans: "Karla Variable", system-ui, -apple-system, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -54,7 +54,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; margin: 0; line-height
 .btn[disabled], .btn[aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; }
 
 /* Startseite */
-.hero { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; padding-top: 24px; padding-bottom: 88px; }
+.hero { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; padding-top: 24px; padding-bottom: 56px; }
 .hero-text { flex: 1 1 420px; display: flex; flex-direction: column; gap: 24px; }
 .hero h1 { font-size: clamp(48px, 7vw, 76px); line-height: 0.98; }
 .hero h1 em { color: var(--accent); }
@@ -146,7 +146,7 @@ footer.fuss nav { display: flex; flex-wrap: wrap; gap: 20px; }
 }
 
 /* So fängst du an */
-.anfangen { padding-top: 96px; padding-bottom: 32px; display: flex; flex-direction: column; gap: 18px; max-width: 760px; }
+.anfangen { padding-top: 96px; padding-bottom: 32px; display: flex; flex-direction: column; gap: 18px; max-width: 860px; }
 .anfangen p { margin: 0; color: var(--ink-2); font-size: 18px; line-height: 1.7; }
 .anfangen p.gross { font-family: var(--serif); font-size: clamp(26px, 3.4vw, 32px); line-height: 1.25; color: var(--accent); font-style: italic; }
 .anfangen p.gruss { font-family: var(--serif); font-size: 28px; line-height: 1.25; color: var(--ink); }
@@ -165,3 +165,70 @@ footer.fuss nav { display: flex; flex-wrap: wrap; gap: 20px; }
 .kafi-bilder > .gross { grid-column: span 3; grid-row: span 2; }
 .kafi-bilder figcaption { grid-column: 1 / -1; font-size: 13px; color: var(--sand); }
 @media (max-width: 640px) { .kafi-bilder { grid-template-rows: repeat(2, 150px); } }
+
+/* ---------- Deko rund ums Töpfern ---------- */
+
+/* Sprenkel wie auf Argis Glasur */
+.band, .anfangen-band {
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(122, 74, 46, 0.22) 0 1.2px, transparent 1.8px),
+    radial-gradient(circle at 70% 65%, rgba(122, 74, 46, 0.16) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 45% 85%, rgba(122, 74, 46, 0.12) 0 1.6px, transparent 2.2px);
+  background-size: 97px 89px, 61px 73px, 143px 131px;
+}
+.glasurkante { display: block; width: 100%; height: 64px; margin-bottom: -1px; }
+.tropfen-lang { transform-box: fill-box; transform-origin: 50% 0; animation: tropfen-laufen 7s ease-in-out infinite; }
+.tropfen-lang.t2 { animation-delay: 3.2s; }
+@keyframes tropfen-laufen {
+  0%, 30% { transform: translateY(-4px) scaleY(0.6); }
+  70% { transform: translateY(4px) scaleY(1.5); }
+  100% { transform: translateY(-4px) scaleY(0.6); }
+}
+
+/* Drehscheibe im Abschnitt «So fängst du an» */
+.anfangen-kopf { display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; justify-content: space-between; }
+.anfangen-kopf > div { flex: 1 1 360px; display: flex; flex-direction: column; gap: 12px; }
+.drehscheibe { width: 220px; height: auto; flex: 0 0 auto; }
+.drehscheibe .becher, .schritte .becher { transform-box: fill-box; transform-origin: 50% 100%; animation: hochziehen 6s ease-in-out infinite; }
+@keyframes hochziehen {
+  0% { transform: scale(1.5, 0.25); }
+  35% { transform: scale(1.15, 0.6); }
+  70%, 88% { transform: scale(1, 1); }
+  100% { transform: scale(1.5, 0.25); }
+}
+.drehscheibe .rillen { animation: rillen 0.6s linear infinite; }
+@keyframes rillen { to { transform: translateX(3px); } }
+.scheibe-rand { animation: drehen 0.9s linear infinite; }
+@keyframes drehen { to { stroke-dashoffset: -26; } }
+.drehscheibe .tropfen { animation: tropfen 6s ease-in infinite; opacity: 0; }
+@keyframes tropfen {
+  0%, 40% { transform: translateY(0); opacity: 0; }
+  42% { opacity: 1; }
+  55% { transform: translateY(40px); opacity: 1; }
+  57%, 100% { transform: translateY(40px); opacity: 0; }
+}
+.drehscheibe .spritzer { animation: spritzer 6s ease-out infinite; opacity: 0; }
+@keyframes spritzer { 0%, 55% { opacity: 0; transform: translateY(0); } 60% { opacity: 1; } 75%, 100% { opacity: 0; transform: translateY(-10px); } }
+
+/* Vier Schritte */
+.schritte { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; }
+.schritte li { background: var(--white); border-radius: 18px; padding: 18px 16px 16px; display: flex; flex-direction: column; gap: 2px; position: relative; font-size: 15px; color: var(--ink-2); }
+.schritte strong { font-family: var(--serif); font-size: 24px; font-weight: 600; color: var(--ink); }
+.schritt-bild svg { width: 80px; height: 64px; display: block; margin-bottom: 6px; }
+.schritt-nr { position: absolute; top: 12px; right: 16px; font-family: var(--serif); font-size: 28px; color: var(--sand); }
+.klumpen { transform-box: fill-box; transform-origin: 50% 100%; animation: kneten 1.6s ease-in-out infinite; }
+@keyframes kneten { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.12, 0.84); } }
+.flamme { transform-box: fill-box; transform-origin: 50% 100%; animation: flackern 0.9s ease-in-out infinite alternate; }
+@keyframes flackern { from { transform: scale(0.9, 0.85); fill: #e0894f; } to { transform: scale(1.05, 1.1); fill: #f2b35e; } }
+.gluehen { animation: gluehen 1.4s ease-in-out infinite alternate; }
+@keyframes gluehen { from { opacity: 0.3; } to { opacity: 1; } }
+
+/* Knopf «Buchen» wackelt beim Darüberfahren wie ein frischer Becher */
+.termin-aktion .btn:hover { animation: wackeln 0.5s ease-in-out; }
+@keyframes wackeln { 25% { transform: rotate(-3deg); } 75% { transform: rotate(3deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; }
+  .drehscheibe .tropfen, .drehscheibe .spritzer { opacity: 0; }
+}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Fuss, Kopf, TerminZeile } from "./teile";
 import { kommendeTermine } from "@/lib/kurse";
 import { SITE } from "@/lib/site";
+import { Drehscheibe, Glasurkante, Schritte } from "./deko";
 
 export const dynamic = "force-dynamic";
 
@@ -41,6 +42,7 @@ export default async function Start() {
         </div>
       </header>
 
+      <Glasurkante />
       <section id="kurse" className="band">
         <div className="narrow">
           <div className="section-head">
@@ -61,9 +63,15 @@ export default async function Start() {
       </section>
 
       <section id="anfangen" className="narrow anfangen">
-        <span className="eyebrow">So fängst du an</span>
-        <h2 className="h2">Wie fängt man eigentlich an zu töpfern?</h2>
-        <p className="gross">Ganz ehrlich: mit schmutzigen Händen und einem Lachen.</p>
+        <div className="anfangen-kopf">
+          <div>
+            <span className="eyebrow">So fängst du an</span>
+            <h2 className="h2">Wie fängt man eigentlich an zu töpfern?</h2>
+            <p className="gross">Ganz ehrlich: mit schmutzigen Händen und einem Lachen.</p>
+          </div>
+          <Drehscheibe />
+        </div>
+        <Schritte />
         <p>
           Am Anfang steht ein Klumpen Ton, kühl, weich und ein bisschen eigenwillig. Bevor er etwas werden darf, wird er
           geknetet. Das macht die Luftbläschen raus und bringt dich langsam an, im Keller, weg vom Handy, hin zu deinen Händen.
