@@ -122,7 +122,12 @@ export default async function Start() {
               <a href={SITE.ort.web} rel="noopener">kafihoizäme.ch</a>
             </p>
           </div>
-          <div className="platzhalter"><span>Foto: Werkstatt im Keller (folgt)</span></div>
+          <figure className="kafi-bilder">
+            <div className="gross"><Image src="/bilder/kafi-schild.jpg" alt="Kreidetafel mit der Aufschrift Kafi Hoi Zäme und zwei Herzen" fill sizes="(max-width: 900px) 60vw, 340px" className="cover" /></div>
+            <div><Image src="/bilder/kafi-espresso.jpg" alt="Siebträger an der Espressomaschine im Kafi" fill sizes="(max-width: 900px) 40vw, 220px" className="cover" /></div>
+            <div><Image src="/bilder/kafi-mauer.jpg" alt="Pampasgras vor alter Steinmauer" fill sizes="(max-width: 900px) 40vw, 220px" className="cover" /></div>
+            <figcaption>Fotos: Kafi Hoi Zäme</figcaption>
+          </figure>
         </div>
       </section>
 
